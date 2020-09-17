@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+</head>
+<body>
+    <form action="">
+    <body bgcolor="green">
+    </body>
+    <h1>
+        Reservation Request
+    </h1>
+    <fieldset>
+        <legend>
+            General Information
+        </legend>
+        <label for="date">Arrival Date : </label>
+        <input type="date" name="date" id="date">
+        <br>
+        <br>
+        <label for="nights">Nights : </label>
+        <input type="number" name="nights" id="nights">
+        <br>
+        <br>
+        <label for="adults">Adults : </label>
+        <select name="adults" id="adults">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br>
+        <br>
+        <label for="child">Children : </label>
+        <select name="child" id="child">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Preferences
+        </legend>
+        <label for="rmtype">Roomtype : </label>
+        <input type="radio" name="rmtype" />Standard
+        <input type="radio" name="rmtype" />Buisness
+        <input type="radio" name="rmtype" />Suite
+        <br>
+        <br>
+        <label for="bd">Gender : </label>
+        <input type="radio" name="bd" />Queen
+        <input type="radio" name="bd" />King
+        <br>
+        <br>
+        <label for="chkbx">Smoking</label>
+        <input type="checkbox" name="chkbx" id="chkbx">
+        <br>
+        <br>
+        <label for="food type">Food Type : </label> 
+        <input type="text" list="list1">
+        <datalist id="list1">
+            <option>Vegan</option>
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+        </datalist>
+        <br>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>
+            Contact Information
+        </legend>
+        <br>
+        <br>
+        <!-- name -->
+        <label for="username"> Name : </label>
+        <input name="username" id="username" required placeholder="First Name"/>
+        <br>
+        <br>
+        <label for="gmail">Email : </label>
+        <input type='email'name="gmail" id="gmail" required placeholder="abc@gmail.com"/>
+        <br>
+        <br>
+        <label for="phone">Phone Number : </label>
+        <input type="tel" name="phone" id="phone" placeholder="91+">
+        <br>
+        <br>
+        <label for="pswrd">Password : </label>
+        <input type="password" name="pswrd" id="pswrd" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+
+    </fieldset>
+    <fieldset>
+        <legend>
+            Distance
+        </legend>
+        <label for="prgrs">Progress Bar</label>
+        <progress id="prgrs" name='prgrs' max="100" value='45'></progress>
+        <br>
+        <br>
+            <label for="meter">Fuel Meter :</label>
+            <meter id="meter" name='meter' value="50" max="100"></meter>
+        <br>
+        <br>
+        <label for="txt">Enter Your Text</label>
+        <textarea type='checkbox' name="txt" id="txt" cols="30" rows="10" placeholder="Enter Your Text"></textarea>
+    </fieldset>
+    <input type="submit" name="sbmt" id=""/>
+
+    </form>
+
+</body>
+</html>
